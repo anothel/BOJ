@@ -11,6 +11,7 @@ void dfs(const int& count) {
     if (M == count) {
         for (int i = 0; i < M; i++) std::cout << vAnswer[i] << " ";
         std::cout << "\n";
+
         return;
     }
 
