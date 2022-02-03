@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-enum : int { MAX_NUM = 8 };
+enum : int { MAX_NUM = 7 };
 
 static int N(0), M(0);
 static std::vector<int> vAnswer;
