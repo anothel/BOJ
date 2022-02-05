@@ -12,5 +12,6 @@ target_sources(a PRIVATE
                           # 15654_N_M_5.cc
                           # 15655_N_M_6.cc
                           # 15656_N_M_7.cc
-                          15657_N_M_8.cc
+                          # 15657_N_M_8.cc
+                          15792_A_B-2.cc
 )
