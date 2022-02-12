@@ -7,7 +7,7 @@ static int N(0), M(0);
 static std::vector<int> vAnswer;
 static bool bVisited[MAX_NUM];
 
-void backTracking(const int &count) {
+void dfs(const int &count) {
   if (count == M) {
     for (int i = 0; i < M; i++) std::cout << vAnswer[i] << " ";
     std::cout << "\n";
@@ -19,7 +19,7 @@ void backTracking(const int &count) {
     if (bVisited[i] == false) {
       bVisited[i] = true;
       vAnswer.push_back(i + 1);
-      backTracking(count + 1);
+      dfs(count + 1);
       vAnswer.pop_back();
       bVisited[i] = false;
     }
@@ -35,7 +35,7 @@ int main() {
 
   std::cin >> N >> M;
 
-  backTracking(0);
+  dfs(0);
 
   return 0;
 }
