@@ -53,14 +53,12 @@ int main() {
 
     if (sub < d && d < add) {
       std::cout << "2\n";
-    } else if (add == d) {
-      std::cout << "1\n";
-    } else if (sub == d && d != 0) {
-      std::cout << "1\n";
     } else if (d == 0 && x.first.get_r() == x.second.get_r()) {
       std::cout << "-1\n";
     } else if (add < d || d < sub || d == 0) {
       std::cout << "0\n";
+    } else if (add == d || sub == d) {
+      std::cout << "1\n";
     } else {
       exit(1);
     }
