@@ -6,11 +6,10 @@ def main():
   B += int(sys.stdin.readline())
 
   h = B / 60
-  m = B % 60
+  B %= 60
 
   if 1 <= h:
     A += h
-    B = m
     if 24 <= A:
       A -= 24
   print(str(int(A)) + " " + str(B))
