@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-  print(sys.stdin.readline().strip() + "??!")
+  print(int(sys.stdin.readline().strip()) - 543)
 
 
 if __name__ == "__main__":
