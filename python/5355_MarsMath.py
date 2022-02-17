@@ -13,8 +13,7 @@ def main():
   for i in range(int(sys.stdin.readline())):
     text = sys.stdin.readline().split()
 
-    number = 0
-    op = ''
+    number = 0.00
 
     for j in range(len(text)):
       currnetText = text[j]
