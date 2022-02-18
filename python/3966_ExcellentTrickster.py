@@ -34,10 +34,9 @@ def getNormalNumber(n, k):
 
 def main():
   n, k = map(int, stdin.readline().split())
-  
+
   # print(getNormalNumber(n, k))
-  
-  
+
   sReturn = list()
 
   while n:
