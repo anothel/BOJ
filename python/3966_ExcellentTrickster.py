@@ -47,8 +47,6 @@ def main():
   count = 0
   f = 0
 
-  print(sReturn)
-
   for i in sReturn:
     if f == 0:
       if k <= i:
