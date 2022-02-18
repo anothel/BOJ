@@ -40,7 +40,7 @@ def main():
   # for i in range(n + 1):
   #   print("i: " + str(i) + ", minus" + str(getMinusNumber(i, k)))
 
-  print(getNormalNumber(n, k*k))
+  # print(getNormalNumber(n, k*k))
 
   count = 0
   f = 0
