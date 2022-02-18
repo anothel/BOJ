@@ -2,8 +2,7 @@ from sys import stdin
 
 
 def main():
-  N = stdin.readline()
-  N = int(N)
+  N = int(stdin.readline())
 
   for i in range(N+1):
     if i < 2:
