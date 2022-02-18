@@ -1,52 +1,51 @@
 from sys import stdin
 
 
+# K 진법으로 변환
 def getNormalNumber(n, k):
-  sReturn = list()
+  k_based_n = list()
 
   while n:
-    sReturn.insert(0, n % k)
+    k_based_n.insert(0, n % k)
     n //= k
 
-  return sReturn
+  return k_based_n
 
-# def getMinusNumber(n, k):
-#   sReturn = ''
 
-#   while k <= abs(n):
-#     sReturn += str(n % k)
+# -K 진법으로 변환
+def getMinusNumber(n, k):
+  k_based_n = list()
 
-#     if n < 0:
-#       n = n // k * -1
-#     else:
-#       n = int(n / k) * -1
+  while k <= abs(n):
+    k_based_n.insert(0, n % k)
+    n //= k
+    n *= -1
 
-#   n *= -1
-#   if 0 < n:
-#     n *= -1
-#     sReturn += str(n % k)
-#     n = int(n / k) - 1
+  n *= -1
+  if 0 < n:
+    n *= -1
+    k_based_n.insert(0, n % k)
+    n //= k
 
-#   sReturn += str(n * -1)
+  k_based_n.insert(0, -n)
 
-#   return sReturn[::-1]
+  return k_based_n
 
 
 def main():
   n, k = map(int, stdin.readline().split())
 
-  # print(getNormalNumber(n, k))
+  # for i in range(n + 1):
+  #   print("i: " + str(i) + ", normal" + str(getNormalNumber(i, k)))
+  # for i in range(n + 1):
+  #   print("i: " + str(i) + ", minus" + str(getMinusNumber(i, k)))
 
-  sReturn = list()
-
-  while n:
-    sReturn.insert(0, n % (k*k))
-    n //= k*k
+  print(getNormalNumber(n, k*k))
 
   count = 0
   f = 0
 
-  for i in sReturn:
+  for i in getNormalNumber(n, k*k):
     if f == 0:
       if k <= i:
         count += k
@@ -60,21 +59,6 @@ def main():
     count += 1
 
   print(count)
-
-  # for i in range(n + 1):
-  #   normal = getNormalNumber(i, k*k)
-  #   # print(normal)
-  #   if len(normal) < 2:
-  #     # print(normal)
-  #     count += 1
-  #     continue
-  #   elif len(normal) % 2 == 0:
-  #     continue
-  #   else:
-  #     if normal[1] == 0:
-  #       count += 1
-
-  # print(count)
 
 
 if __name__ == "__main__":
