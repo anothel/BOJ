@@ -5,7 +5,7 @@ enum : int { MAX_NUM = 8 };
 
 static int N(0), M(0);
 static std::vector<int> vAnswer;
-static bool bVisited[MAX_NUM] = {0};;
+static bool bVisited[MAX_NUM] = {0};
 
 void dfs(const int &count) {
   if (count == M) {
