@@ -1,4 +1,3 @@
-from posixpath import split
 from sys import stdin
 
 
