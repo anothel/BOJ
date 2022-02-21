@@ -3,7 +3,8 @@ from sys import stdin
 
 def main():
   r = 1
-  numList = [0 for _ in range(10)]
+  numList = [0] * 10
+  # numList = [0 for _ in range(10)]
 
   for _ in range(3):
     r *= int(stdin.readline().strip())
