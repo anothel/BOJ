@@ -2,9 +2,8 @@ from sys import stdin
 
 
 def main():
-  inputList = list(map(int, stdin.readline().strip().split()))
   sum = 0
-  for i in inputList:
+  for i in list(map(int, stdin.readline().strip().split())):
     sum += (i * i)
   print(sum % 10)
 
