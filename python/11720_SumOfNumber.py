@@ -2,7 +2,15 @@ from sys import stdin
 
 
 def main():
-  print(len(list(stdin.readline().strip().split())))
+  N = int(stdin.readline().strip())
+  Number = int(stdin.readline().strip())
+
+  sum = 0
+  while Number:
+    sum += Number % 10
+    Number //= 10
+
+  print(sum)
 
 
 if __name__ == "__main__":
