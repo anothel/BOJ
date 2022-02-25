@@ -1,23 +1,27 @@
 from sys import stdin
 
 
-def main():
-  bodySpec: list = list()
-  for _ in range(int(stdin.readline().strip())):
-    bodySpec.append(list(map(int, stdin.readline().strip().split())))
+def getCountList(bodies: list) -> list:
+  lReturnValue: list = list()
 
-  counts: list = list()
-  for i in range(len(bodySpec)):
+  for i in range(len(bodies)):
     count: int = 1
-    for j in range(len(bodySpec)):
+    for j in range(len(bodies)):
       if i == j:
         continue
-      if bodySpec[i][0] < bodySpec[j][0] and bodySpec[i][1] < bodySpec[j][1]:
+      if bodies[i][0] < bodies[j][0] and bodies[i][1] < bodies[j][1]:
         count += 1
+    lReturnValue.append(count)
 
-    counts.append(count)
+  return lReturnValue
 
-  for count in counts:
+
+def main():
+  bodies: list = list()
+  for _ in range(int(stdin.readline().strip())):
+    bodies.append(list(map(int, stdin.readline().strip().split())))
+
+  for count in getCountList(bodies):
     print(count, end=" ")
 
 
