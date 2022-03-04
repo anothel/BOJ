@@ -6,7 +6,8 @@ target_sources(a PRIVATE
                           # main.cc
                           # 1002_Turret.cc
                           # 1003_Fibonacci.cc
-                          1550_Hexadecimal.cc
+                          # 1550_Hexadecimal.cc
+                          1977_SquareNumber.cc
                           # 2908_Constant.cc
                           # 15649_N_M_1.cc
                           # 15650_N_M_2.cc
