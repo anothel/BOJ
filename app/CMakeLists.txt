@@ -9,7 +9,8 @@ target_sources(a PRIVATE
                           # 1550_Hexadecimal.cc
                           # 1977_SquareNumber.cc
                           # 2908_Constant.cc
-                          11098_HelpChelsea.cc
+                          3003_King_Queen_Look_Bishop_Night_Phone.cc
+                          # 11098_HelpChelsea.cc
                           # 15649_N_M_1.cc
                           # 15650_N_M_2.cc
                           # 15651_N_M_3.cc
