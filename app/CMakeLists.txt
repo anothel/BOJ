@@ -20,7 +20,8 @@ target_sources(a PRIVATE
                           # 9654_FleetOfNavu
                           # 10170_NFC_West_vs_North
                           # 11098_HelpChelsea
-                          11382_Kids
+                          # 11382_Kids
+                          11942_KoreaUniversity                          
                           # 15649_N_M_1
                           # 15650_N_M_2
                           # 15651_N_M_3
