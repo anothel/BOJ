@@ -18,8 +18,9 @@ target_sources(a PRIVATE
                           # 6749_NextInLine
                           # 9653_StarWarsLogo
                           # 9654_FleetOfNavu
-                          10170_NFC_West_vs_North
+                          # 10170_NFC_West_vs_North
                           # 11098_HelpChelsea
+                          11382_Kids
                           # 15649_N_M_1
                           # 15650_N_M_2
                           # 15651_N_M_3
