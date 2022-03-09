@@ -13,7 +13,8 @@ target_sources(a PRIVATE
                           # 5337_Welcome.cc
                           # 5338_MicrosoftLogo.cc
                           # 5339_CallCenter.cc
-                          5522_CardGame.cc
+                          # 5522_CardGame.cc
+                          5554_RoadForErrand
                           # 11098_HelpChelsea.cc
                           # 15649_N_M_1.cc
                           # 15650_N_M_2.cc
