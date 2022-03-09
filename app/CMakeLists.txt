@@ -17,7 +17,8 @@ target_sources(a PRIVATE
                           # 5554_RoadForErrand
                           # 6749_NextInLine
                           # 9653_StarWarsLogo
-                          9654_FleetOfNavu
+                          # 9654_FleetOfNavu
+                          10170_NFC_West_vs_North
                           # 11098_HelpChelsea
                           # 15649_N_M_1
                           # 15650_N_M_2
